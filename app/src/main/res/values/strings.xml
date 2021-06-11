@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Credito Para Todes</string>
+    <string name="tv_title_intro">Empréstimo pessoal online</string>
+    <string name="tv_intro">Também conhecido como “crédito pessoal”, é uma opção geralmente oferecida por bancos, fintechs e financeiras. A escolha mais indicada para diferentes necessidades, como:</string>
+    <string name="tv_pagamento_dividas"> Pagamento de dívidas;</string>
+    <string name="compras_de_alto_valor">Compras de alto valor;</string>
+    <string name="investimentos">Investimentos;</string>
+    <string name="viagens">Viagens;</string>
+    <string name="e_muito_mais">E muito mais</string>
+    <string name="tv_title_opcoes">Aproveite essa oportunidade e solicite já o seu empréstimo!</string>
+    <string name="automovel">Empréstimo com garantia de automóvel</string>
+    <string name="imovel">Empréstimo com garantia de imóvel</string>
+    <string name="sem_renda">Empréstimo sem comprovação de renda</string>
+</resources>
