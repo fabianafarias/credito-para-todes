@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/tv-title-intro"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_title_intro"
         android:textAlignment="center"
@@ -17,7 +17,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
 
@@ -110,20 +110,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tv-viagens" />
 
     <ImageView
+        android:id="@+id/iv-pig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:src="@drawable/ic_savings_black_24dp"
         app:layout_constraintBottom_toTopOf="@+id/tv-title-opcoes"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/tv-intro"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintStart_toEndOf="@+id/tv-investimentos"
+        app:layout_constraintTop_toBottomOf="@+id/tv-intro" />
 
     <TextView
         android:id="@+id/tv-title-opcoes"
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/tv_title_opcoes"
@@ -132,84 +130,89 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/tv-muito-mais" />
 
     <Button
         android:id="@+id/btn-automovel"
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/pink_500"
-        android:drawableTop="@drawable/ic_baseline_directions_car_24"
-        android:padding="2dp"
+        android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+        android:onClick="openIntent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="@string/automovel"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/tv-title-opcoes" />
 
     <Button
         android:id="@+id/btn-imovel"
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_500"
-        android:drawableTop="@drawable/ic_baseline_house_24"
-        android:padding="2dp"
+        android:drawableLeft="@drawable/ic_baseline_house_24"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="@string/imovel"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/btn-automovel" />
 
     <Button
         android:id="@+id/btn-sem-renda"
-        android:layout_width="300dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_500"
-        android:drawableTop="@drawable/ic_baseline_money_off_24"
-        android:padding="2dp"
+        android:drawableLeft="@drawable/ic_baseline_money_off_24"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="@string/sem_renda"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelinbottom"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/btn-imovel"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.058" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="356dp" />
+        app:layout_constraintGuide_end="24dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="24dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinbottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="715dp" />
+        app:layout_constraintGuide_end="24dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
