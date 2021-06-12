@@ -87,8 +87,8 @@
         app:layout_constraintTop_toBottomOf="@+id/tv-automovel-item-2" />
 
     <Button
-        android:id="@+id/btn-contratar"
-        android:onClick="contratarIntent1"
+        android:id="@+id/btn-contratar-automovel"
+        android:onClick="contratarAutomovelOnClicked"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#F613F8"

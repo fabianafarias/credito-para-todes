@@ -158,7 +158,7 @@
 
     <Button
         android:id="@+id/btn-automovel"
-        android:onClick="automovelIntent"
+        android:onClick="btnAutomovelOnClicked"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -176,7 +176,7 @@
 
     <Button
         android:id="@+id/btn-imovel"
-        android:onClick="imovelIntent"
+        android:onClick="btnImovelOnClicked"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_500"
@@ -193,7 +193,7 @@
 
     <Button
         android:id="@+id/btn-sem-renda"
-        android:onClick="rendaIntent"
+        android:onClick="btnSemRendaOnClicked"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink_500"

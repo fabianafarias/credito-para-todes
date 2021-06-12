@@ -6,4 +6,217 @@
     android:layout_height="match_parent"
     tools:context=".FifthActivity">
 
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <TextView
+        android:id="@+id/tv-title-cadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_title_cadastro"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue_500"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/tv-title-name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/nome"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-cadastro" />
+
+    <EditText
+        android:id="@+id/et-name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/escreva_seu_nome"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/tv-title-name"
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-cadastro" />
+
+    <TextView
+        android:id="@+id/tv-title-email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-name" />
+
+    <EditText
+        android:id="@+id/et-email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/escreva_seu_melhor_email"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/tv-title-email"
+        app:layout_constraintTop_toBottomOf="@+id/et-name" />
+
+
+    <TextView
+        android:id="@+id/tv-title-renda-mensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/renda_mensal"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/et-renda"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-email" />
+
+
+    <EditText
+        android:id="@+id/et-renda"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/escreva_sua_renda_mensal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="144dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/tv-title-renda-mensal"
+        app:layout_constraintTop_toBottomOf="@+id/et-email"
+        />
+
+    <TextView
+        android:id="@+id/tv-title-tipo-emprestimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/tipo_emprestimo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-renda-mensal" />
+
+        <RadioGroup
+            android:id="@+id/radio-group"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/et-renda"
+            app:layout_constraintStart_toEndOf="@+id/tv-title-tipo-emprestimo"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight" >
+
+            <RadioButton
+                android:id="@+id/radio-automovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/garantia_de_automovel"
+                android:textSize="16sp"
+                android:onClick="onRadioAutomovelClicked"/>
+
+            <RadioButton
+                android:id="@+id/radio-imovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/garantia_de_imovel"
+                android:textSize="16sp"
+                android:onClick="onRadioImovelClicked" />
+
+            <RadioButton
+                android:id="@+id/radio-sem-renda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sem_comprovacao_de_renda"
+                android:textSize="16sp"
+                android:onClick="onRadioSemRendaClicked" />
+
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv-title-valor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/valor_emprestimo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radio-group" />
+
+    <SeekBar
+            android:id="@+id/seekBar-valor"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="20000"
+            android:onClick="sickBarClicked"
+            android:progress="3000"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tv-title-valor" />
+
+    <Button
+        android:id="@+id/btn-enviarAnalise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F613F8"
+        android:onClick="cadastrarOnClicked"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/enviar_para_analise"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar-valor"
+        app:layout_constraintVertical_bias="0.356" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

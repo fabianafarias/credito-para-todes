@@ -61,7 +61,7 @@
 
     <Button
         android:id="@+id/btn-contratar"
-        android:onClick="contratarIntent3"
+        android:onClick="contratarSemRendaOnClicked"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#F613F8"
