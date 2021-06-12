@@ -11,4 +11,19 @@
     <string name="automovel">Empréstimo com garantia de automóvel</string>
     <string name="imovel">Empréstimo com garantia de imóvel</string>
     <string name="sem_renda">Empréstimo sem comprovação de renda</string>
+    <string name="automovel_item_1">Use seu automóvel como garantia do seu empréstimo;</string>
+    <string name="automovel_item_2">Transforme até 80% do valor do seu imóvel em crédito para seu empréstimo;</string>
+    <string name="automovel_item_3">Com essa garantia, você consegue maiores prazos de pagamento e as menores taxas de juros do mercado;</string>
+    <string name="contratar">Contratar</string>
+    <string name="imovel_item_1">Use sua casa, apartamento, terrenos ou imóveis comerciais como garantia do seu empréstimo;</string>
+    <string name="imovel_item_2">Transforme até 60% do valor do seu imóvel em crédito para seu empréstimo;</string>
+    <string name="imovel_item_3">Os parceiros do Crédito para todxs oferecem limites e serviços variados para cada perfil de
+        consumidor,inclusive com opções sem anuidade.
+    </string>
+    <string name="sem_renda_item_1">Pesquisar e comparar opções de crédito ajudam a encontrar taxas de juros menores.
+                A promessa de empréstimo sem comprovação de renda pode parecer tentadora para quem possui
+                alguma restrição no nome. Mas nem sempre o fato de não precisar comprovar renda é uma alternativa
+                interessante por causa dos juros. Para escolher a melhor opção de crédito para o seu bolso,
+                você precisa pesquisar e comparar as ofertas do mercado.</string>
+
 </resources>

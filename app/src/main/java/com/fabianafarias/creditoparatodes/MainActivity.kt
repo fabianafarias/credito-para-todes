@@ -12,10 +12,40 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun openIntent(view: View) {
+    fun automovelIntent(view: View) {
         val intent = Intent(this, SecondActivity::class.java)
         startActivity(intent)
     }
+
+    fun imovelIntent(view: View) {
+        val intent = Intent(this, ThirdActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun rendaIntent(view: View) {
+        val intent = Intent(this, FourthActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun contratarIntent1(view: View) {
+        val intent = Intent(this, FifthActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun contratarIntent2(view: View) {
+        val intent = Intent(this, FifthActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun contratarIntent3(view: View) {
+        val intent = Intent(this, FifthActivity::class.java)
+        startActivity(intent)
+    }
+
+
+
+
+
 
 }
 
