@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/ic_savings_black_24dp" />
 
     <TextView
-        android:id="@+id/nome-cadastrado"
+        android:id="@+id/tv-nome-cadastrado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv-pig2"/>
 
     <TextView
-        android:id="@+id/cadastro-efetuado"
+        android:id="@+id/tv-cadastro-efetuado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/nome-cadastrado"
+        app:layout_constraintTop_toBottomOf="@+id/tv-nome-cadastrado"
         app:layout_constraintVertical_bias="0.0" />
 
 

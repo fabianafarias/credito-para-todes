@@ -30,15 +30,16 @@
     <string name="escreva_seu_nome">Escreva seu nome</string>
     <string name="renda_mensal">Renda mensal:</string>
     <string name="escreva_sua_renda_mensal">Sua renda mensal aqui</string>
-    <string name="tipo_emprestimo">Empréstimo:</string>
+    <string name="tipo_emprestimo">Empréstimo escolhido</string>
     <string name="garantia_de_automovel">Garantia de Automóvel</string>
     <string name="garantia_de_imovel">Garantia de Imóvel</string>
     <string name="sem_comprovacao_de_renda">Sem renda</string>
-    <string name="valor_emprestimo">Quanto você precisa?</string>
+    <string name="tv_valor_emprestimo">Valor desejado</string>
     <string name="enviar_para_analise">Enviar para análise</string>
     <string name="email">Email: </string>
     <string name="escreva_seu_melhor_email">Escreva seu melhor email</string>
     <string name="cadastro_efetuado_com_sucesso">o seu cadastro foi efetuado com sucesso. Sua solicitação está em análise. Você receberá uma mensagem de confirmação no email.</string>
     <string name="nome_cadastrado">Nome,</string>
+    <string name="escreva_o_valor_desejado">Escreva o valor desejado</string>
 
 </resources>

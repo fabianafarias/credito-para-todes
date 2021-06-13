@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -56,7 +57,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/nome"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/tv-title-cadastro" />
@@ -80,7 +81,7 @@
         android:layout_marginTop="18dp"
         android:text="@string/email"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/tv-title-name" />
@@ -91,7 +92,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/escreva_seu_melhor_email"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/tv-title-email"
         app:layout_constraintTop_toBottomOf="@+id/et-name" />
@@ -104,7 +105,7 @@
         android:layout_marginTop="18dp"
         android:text="@string/renda_mensal"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/et-renda"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
@@ -117,7 +118,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/escreva_sua_renda_mensal"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         tools:layout_editor_absoluteX="144dp"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/tv-title-renda-mensal"
@@ -126,86 +127,86 @@
 
     <TextView
         android:id="@+id/tv-title-tipo-emprestimo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:text="@string/tipo_emprestimo"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/tv-title-renda-mensal" />
+        app:layout_constraintTop_toBottomOf="@+id/tv-title-renda-mensal"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        />
 
         <RadioGroup
             android:id="@+id/radio-group"
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/et-renda"
-            app:layout_constraintStart_toEndOf="@+id/tv-title-tipo-emprestimo"
+            app:layout_constraintTop_toBottomOf="@+id/tv-title-tipo-emprestimo"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight" >
 
             <RadioButton
-                android:id="@+id/radio-automovel"
+                android:id="@+id/radio_automovel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/garantia_de_automovel"
-                android:textSize="16sp"
-                android:onClick="onRadioAutomovelClicked"/>
+                android:textSize="14sp"
+                android:text="@string/automovel"
+                android:onClick="onRadioButtonClicked"/>
 
             <RadioButton
-                android:id="@+id/radio-imovel"
+                android:id="@+id/radio_imovel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/garantia_de_imovel"
-                android:textSize="16sp"
-                android:onClick="onRadioImovelClicked" />
+                android:textSize="14sp"
+                android:text="@string/imovel"
+                android:onClick="onRadioButtonClicked"/>
 
             <RadioButton
-                android:id="@+id/radio-sem-renda"
+                android:id="@+id/radio_sem_renda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sem_comprovacao_de_renda"
-                android:textSize="16sp"
-                android:onClick="onRadioSemRendaClicked" />
+                android:text="@string/sem_renda"
+                android:textSize="14sp"
+                android:onClick="onRadioButtonClicked" />
 
         </RadioGroup>
 
     <TextView
-        android:id="@+id/tv-title-valor"
-        android:layout_width="0dp"
+        android:id="@+id/tv_valor_emprestimo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/valor_emprestimo"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_valor_emprestimo"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/radio-group" />
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/et_valor_emprestimo"
+        app:layout_constraintTop_toBottomOf="@+id/radio-group"
+        />
 
-    <SeekBar
-            android:id="@+id/seekBar-valor"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:max="20000"
-            android:onClick="sickBarClicked"
-            android:progress="3000"
-            android:progressDrawable="@drawable/custom_progress"
-            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-            app:layout_constraintTop_toBottomOf="@+id/tv-title-valor" />
+    <EditText
+        android:id="@+id/et_valor_emprestimo"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/escreva_o_valor_desejado"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/radio-group"
+        />
 
     <Button
-        android:id="@+id/btn-enviarAnalise"
+        android:id="@+id/btn_cadastrar"
+        android:onClick="contratarOnClicked"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#F613F8"
-        android:onClick="cadastrarOnClicked"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="@string/enviar_para_analise"
@@ -214,9 +215,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar-valor"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintTop_toBottomOf="@+id/et_valor_emprestimo"
+        app:layout_constraintVertical_bias="0.336" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
