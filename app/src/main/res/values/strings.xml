@@ -41,5 +41,8 @@
     <string name="cadastro_efetuado_com_sucesso">o seu cadastro foi efetuado com sucesso. Sua solicitação está em análise. Você receberá uma mensagem de confirmação no email.</string>
     <string name="nome_cadastrado">Nome,</string>
     <string name="escreva_o_valor_desejado">Escreva o valor desejado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_button">Entrar</string>
 
 </resources>
